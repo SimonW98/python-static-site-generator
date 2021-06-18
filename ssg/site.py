@@ -1,4 +1,5 @@
 from pathlib import Path
+from ssg.parsers import Parser
 
 
 class Site:
@@ -16,3 +17,11 @@ class Site:
         for path in self.source.rglob("*"):
             if path.is_dir():
                 self.create_dir(path)
+
+    def load_parser(self, extension):
+        for path in self.parsers():
+            if extension is valid_extension()
+            return Parser
+
+    def run_parser(self, path):
+        parser = path.suffix.load_parser()
